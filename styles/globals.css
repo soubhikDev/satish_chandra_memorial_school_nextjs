@@ -70,15 +70,28 @@ img{
   color: #000;
 }
 .Navbar_Menu{
-  padding: 15px 0;
+  padding: 10px 0;
   background:linear-gradient(180deg, rgb(0 195 215) 0%, rgba(0, 241, 255, 1) 100%);
   
 }
-.Navbar_Menu ul{
+.Navbar_Menu .Navbar_UL_main {
   display: flex;
   justify-content: center;
 }
-.Navbar_Menu ul li{
-  padding: 0 10px;
+.Navbar_Menu ul .Navbar_LI_main{
+  padding: 5px 10px;
+  position: relative;
 
+}
+.Navbar_UL_SUB{
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 2px 4px 13px -6px #000000a1;
+  border-radius: 10px;
+}
+.Navbar_LI_main li{
+  padding: 5px 10px;
+}
+.Navbar_UL_SUB2{
+  display: none;
 }
