@@ -81,17 +81,35 @@ img{
 .Navbar_Menu ul .Navbar_LI_main{
   padding: 5px 10px;
   position: relative;
-
+  cursor: pointer;
 }
-.Navbar_UL_SUB{
+.Navbar_UL_SUB,
+.Navbar_UL_mini{
   background-color: #fff;
   position: absolute;
   box-shadow: 2px 4px 13px -6px #000000a1;
   border-radius: 10px;
+  width: fit-content;
 }
 .Navbar_LI_main li{
   padding: 5px 10px;
+  word-break: keep-all;
 }
-.Navbar_UL_SUB2{
+.Navbar_UL_SUB2 .Navbar_UL_SUB{
+  display: none !important;
+}
+.Navbar_UL_SUB ul{
   display: none;
+}
+.Navbar_UL_SUB li{
+  position: relative;
+}
+.Navbar_UL_mini{
+  display: block !important;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translate(48%, -8%);
+  left: 50%;
+  width: 100%;
 }
