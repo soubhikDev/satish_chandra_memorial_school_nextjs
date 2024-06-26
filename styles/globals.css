@@ -89,7 +89,7 @@ img{
   position: absolute;
   box-shadow: 2px 4px 13px -6px #000000a1;
   border-radius: 10px;
-  width: fit-content;
+  width: 180px;
 }
 .Navbar_LI_main li{
   padding: 5px 10px;
