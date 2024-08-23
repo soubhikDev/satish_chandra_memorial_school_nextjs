@@ -79,9 +79,15 @@ img{
   justify-content: center;
 }
 .Navbar_Menu ul .Navbar_LI_main{
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   position: relative;
   cursor: pointer;
+  border-radius: 10px;
+
+}
+.Navbar_Menu ul .Navbar_LI_main span{
+  padding: 5px 10px;
+  display: block;
 }
 .Navbar_UL_SUB,
 .Navbar_UL_mini{
@@ -90,9 +96,10 @@ img{
   box-shadow: 2px 4px 13px -6px #000000a1;
   border-radius: 10px;
   width: 180px;
+  transform: translate(-7px, -2px);
 }
 .Navbar_LI_main li{
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   word-break: keep-all;
 }
 .Navbar_UL_SUB2 .Navbar_UL_SUB{
@@ -103,6 +110,12 @@ img{
 }
 .Navbar_UL_SUB li{
   position: relative;
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.Navbar_LI_main .MuiTypography-root{
+  color: #000 !important;
+  padding: 5px 10px;
+  display: block !important;
 }
 .Navbar_UL_mini{
   display: block !important;
@@ -112,4 +125,21 @@ img{
   transform: translate(48%, -8%);
   left: 50%;
   width: 100%;
+}
+.Navbar_LI_main:hover{
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.Navbar_UL_SUB{
+  /* overflow: hidden; */
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.Navbar_UL_SUB li:hover{
+  border-radius: 10px;
+  border-radius: 10px;
+  background:#1db8ff65;
+  transform: scale(1.1);
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 1px solid #3179ff;
 }
